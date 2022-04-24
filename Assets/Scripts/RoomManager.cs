@@ -1,6 +1,4 @@
 ﻿using Photon.Pun;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class RoomManager : MonoBehaviourPunCallbacks
 {
     public static RoomManager Instance;
-
+    public Vector3[] spawnPoint = new Vector3[2]; // 유저 생성할 위치
 
     private void Awake()
     {
@@ -37,9 +35,14 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     void OnSceneLoaded(Scene scene, LoadSceneMode load)
     {
-        if (scene.buildIndex == 1) // 게임씬일 때,
+        if (scene.buildIndex == 1) // Background 씬일 때,
         {
             // 포톤 프리펩에 있는 플레이어 매니저 생성
+            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, Quaternion.identity);
+        }
+
+        if (scene.buildIndex == 2) // GameScene일 때,
+        {
             PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, Quaternion.identity);
         }
     }

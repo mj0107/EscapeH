@@ -49,18 +49,20 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby() // 로버 연결했을 때
     {
+        /* 로그인창 사용 X
         if (nicknameInputField.text == "") // 닉네임 입력칸이 공백이면 로그인
         {
             MenuManager.Instance.OpenMenu("login");
         }
         else
         {
+        */
             MenuManager.Instance.OpenMenu("title"); // 로비에 들어오면 타이틀 메뉴 오픈
             Debug.Log("Joined Lobby");
 
             // 들어온 사람 이름을 Player + 랜덤 4자리 숫자 붙여서 정해주기
-            //PhotonNetwork.NickName = "Player " + Random.Range(0, 1000).ToString("0000");
-        }
+            PhotonNetwork.NickName = "Player " + Random.Range(0, 1000).ToString("0000");
+        //}
     }
 
     public void login()
@@ -100,6 +102,19 @@ public class Launcher : MonoBehaviourPunCallbacks
         roomNameText.text = PhotonNetwork.CurrentRoom.Name; // 들어간 방 이름 표시
 
         Player[] players = PhotonNetwork.PlayerList;
+
+        if (players.Count() >= 2) // 2명 이상이 되면 방 숨김
+        {
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+        }
+
+        if (players.Count() >= 3) // 3명 이상이 되면 leaveRoom
+        {
+            PhotonNetwork.LeaveRoom();
+            errorText.text = "This room is full now.";
+            MenuManager.Instance.OpenMenu("error");
+        }
+
         foreach (Transform child in playerListContent) // 방에 들어가면 기존 이름표 삭제
         {
             Destroy(child.gameObject);
@@ -122,6 +137,8 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void LeaveRoom() // 방 떠날 때
     {
+        PhotonNetwork.CurrentRoom.IsVisible = true; // 방 다시 보이게
+
         PhotonNetwork.LeaveRoom(); // 포톤 네트워크 기능 : 방 떠나기
         MenuManager.Instance.OpenMenu("loading"); // 로딩창 열기
     }
