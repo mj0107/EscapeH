@@ -43,6 +43,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
         if (scene.buildIndex == 2) // GameScene일 때,
         {
+            //PhotonNetwork.DestroyAll();
             PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, Quaternion.identity);
         }
     }

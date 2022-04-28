@@ -4230,10 +4230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint:
-  - {x: 118, y: 0, z: 1}
-  - {x: 120, y: 0, z: 1}
-  - {x: 12, y: 0, z: 1}
-  - {x: -12, y: 0, z: 1}
+  - {x: 116, y: 1, z: 4}
+  - {x: 122, y: 1, z: 4}
+  - {x: 12, y: 1, z: 1}
+  - {x: -12, y: 1, z: 1}
 --- !u!4 &1357129103
 Transform:
   m_ObjectHideFlags: 0

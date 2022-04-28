@@ -4,11 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
     PhotonView PV;
-    int sceneNumber = 0;
 
 
     private void Awake()
@@ -29,14 +29,31 @@ public class PlayerManager : MonoBehaviour
         Player[] players = PhotonNetwork.PlayerList;
         Vector3 pos = new Vector3();
 
-        if (PhotonNetwork.NickName == players[0].NickName) // 0번째 플레이어와 1번째 플레이어의 스폰 위치 지정
+        if (SceneManager.GetActiveScene().name == "BackGroundScene") // BackGround Scene
         {
-            pos = RoomManager.Instance.spawnPoint[0];
+            if (PhotonNetwork.NickName == players[0].NickName) // 0번째 플레이어와 1번째 플레이어의 스폰 위치 지정
+            {
+                pos = RoomManager.Instance.spawnPoint[0];
+            }
+            else
+            {
+                pos = RoomManager.Instance.spawnPoint[1];
+            }
         }
-        else
+        else if (SceneManager.GetActiveScene().name == "GameScene") // Game Scene
         {
-            pos = RoomManager.Instance.spawnPoint[1];
+            if (PhotonNetwork.NickName == players[0].NickName) // 0번째 플레이어와 1번째 플레이어의 스폰 위치 지정
+            {
+                pos = RoomManager.Instance.spawnPoint[2];
+            }
+            else
+            {
+                pos = RoomManager.Instance.spawnPoint[3];
+            }
         }
+
+        
+        
 
         PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController"), pos, Quaternion.identity);
         Debug.Log("Instantiated Player Controller");
