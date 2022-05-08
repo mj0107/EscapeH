@@ -389,7 +389,7 @@ Transform:
   - {fileID: 1873992775}
   - {fileID: 959131458}
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255998463
 GameObject:
@@ -579,7 +579,6 @@ GameObject:
   - component: {fileID: 373589418}
   - component: {fileID: 373589417}
   - component: {fileID: 373589416}
-  - component: {fileID: 388774729}
   m_Layer: 0
   m_Name: R1
   m_TagString: Untagged
@@ -662,33 +661,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &388774729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373589414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialR1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 373589414}
 --- !u!1 &428368046
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +673,6 @@ GameObject:
   - component: {fileID: 428368050}
   - component: {fileID: 428368049}
   - component: {fileID: 428368048}
-  - component: {fileID: 1415696698}
   m_Layer: 0
   m_Name: L1
   m_TagString: Untagged
@@ -784,33 +755,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1415696698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428368046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialL1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 428368046}
 --- !u!1 &446844188
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +767,6 @@ GameObject:
   - component: {fileID: 446844192}
   - component: {fileID: 446844191}
   - component: {fileID: 446844190}
-  - component: {fileID: 547835217}
   m_Layer: 0
   m_Name: R2
   m_TagString: Untagged
@@ -906,33 +849,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &547835217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446844188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialR2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 446844188}
 --- !u!1 &769705095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1037,6 @@ GameObject:
   - component: {fileID: 959131461}
   - component: {fileID: 959131460}
   - component: {fileID: 959131459}
-  - component: {fileID: 1241267516}
   m_Layer: 0
   m_Name: L4
   m_TagString: Untagged
@@ -1204,33 +1119,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1241267516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959131457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialL4
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 959131457}
 --- !u!1 &1000304409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,7 +1131,6 @@ GameObject:
   - component: {fileID: 1000304413}
   - component: {fileID: 1000304412}
   - component: {fileID: 1000304411}
-  - component: {fileID: 1411038784}
   m_Layer: 0
   m_Name: L2
   m_TagString: Untagged
@@ -1326,33 +1213,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1411038784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000304409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialL2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 1000304409}
 --- !u!1 &1169837959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,7 +1225,6 @@ GameObject:
   - component: {fileID: 1169837963}
   - component: {fileID: 1169837962}
   - component: {fileID: 1169837961}
-  - component: {fileID: 777866543}
   m_Layer: 0
   m_Name: R3
   m_TagString: Untagged
@@ -1448,33 +1307,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &777866543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169837959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialR3
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 1169837959}
 --- !u!1 &1243622360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,7 +1319,6 @@ GameObject:
   - component: {fileID: 1243622364}
   - component: {fileID: 1243622363}
   - component: {fileID: 1243622362}
-  - component: {fileID: 1739921298}
   m_Layer: 0
   m_Name: R4
   m_TagString: Untagged
@@ -1570,33 +1401,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1739921298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243622360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialR4
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 1243622360}
 --- !u!1 &1294080239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1413,6 @@ GameObject:
   - component: {fileID: 1294080243}
   - component: {fileID: 1294080242}
   - component: {fileID: 1294080241}
-  - component: {fileID: 439103325}
   m_Layer: 0
   m_Name: Submit
   m_TagString: Untagged
@@ -1692,33 +1495,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &439103325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294080239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1707531847}
-        m_MethodName: IsCorrectAnswer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 1294080239}
 --- !u!1 &1358505873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,7 +1684,7 @@ GameObject:
   - component: {fileID: 1755765727}
   - component: {fileID: 1755765726}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1926,7 +1702,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1755765728
 MeshFilter:
@@ -2353,7 +2129,6 @@ GameObject:
   - component: {fileID: 1873992778}
   - component: {fileID: 1873992777}
   - component: {fileID: 1873992776}
-  - component: {fileID: 436500579}
   m_Layer: 0
   m_Name: L3
   m_TagString: Untagged
@@ -2436,33 +2211,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &436500579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873992774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5e9f7c3fc99b64e86b79f0791f1d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 388774730}
-        m_MethodName: DialL3
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  button: {fileID: 1873992774}
 --- !u!1 &2085071149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,7 +4286,7 @@ Transform:
   - {fileID: 2111343236937304965}
   - {fileID: 6576404827891972122}
   m_Father: {fileID: 6804344634018497901}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2233894986232544449
 GameObject:
@@ -5378,7 +5126,7 @@ Transform:
   - {fileID: 1089944336076180574}
   - {fileID: 5572684150090529725}
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1676494913479239502
 MeshFilter:
@@ -5482,7 +5230,7 @@ Transform:
   - {fileID: 1030943495952228208}
   - {fileID: 5605484051692892669}
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7862567383587795996
 MeshFilter:
@@ -7666,7 +7414,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6804344634018497901}
-  - component: {fileID: 1707531847}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -7685,31 +7432,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2358682466548923868}
   - {fileID: 1693202967719457231}
   - {fileID: 7863819679082988337}
-  - {fileID: 2358682466548923868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1707531847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5047737846233804802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9455226b9b655ca478cecac73a37bb7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answer: 01000000020000000300000004000000
-  dial:
-  - {fileID: 5592332670206333794}
-  - {fileID: 6371743786586475291}
-  - {fileID: 2864424493548009750}
-  - {fileID: 2685206433292441938}
-  hasp: {fileID: 2230176331927970040}
 --- !u!1 &5164917119060015734
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,7 +7655,7 @@ Transform:
   - {fileID: 5566629138466132856}
   - {fileID: 1873831263589994247}
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1877726418321680602
 MeshFilter:
@@ -8735,7 +8463,7 @@ Transform:
   - {fileID: 2600604194630952157}
   - {fileID: 2533135569028953622}
   m_Father: {fileID: 7863819679082988337}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6219182287520215638
 MeshFilter:
@@ -9523,7 +9251,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7863819679082988337}
-  - component: {fileID: 388774730}
   m_Layer: 0
   m_Name: Combination
   m_TagString: Untagged
@@ -9542,32 +9269,15 @@ Transform:
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 117469028}
   - {fileID: 1755765725}
   - {fileID: 4865165603870193501}
   - {fileID: 3740205476164665883}
   - {fileID: 8936187387691542521}
   - {fileID: 9084202923127509084}
-  - {fileID: 117469028}
   m_Father: {fileID: 6804344634018497901}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &388774730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664347912453106690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e37fefbec1db6a43a2b489792187fa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dial:
-  - {fileID: 5592332670206333794}
-  - {fileID: 6371743786586475291}
-  - {fileID: 2864424493548009750}
-  - {fileID: 2685206433292441938}
 --- !u!1 &6671426488421051673
 GameObject:
   m_ObjectHideFlags: 0
@@ -10139,7 +9849,7 @@ Transform:
   - {fileID: 4643220980267761985}
   - {fileID: 229426581250995699}
   m_Father: {fileID: 6804344634018497901}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7763800209496443439
 GameObject:

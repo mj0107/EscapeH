@@ -5,19 +5,23 @@ using UnityEngine;
 
 public class LockController : MonoBehaviour
 {
-    [SerializeField] int[] answer;
+    [SerializeField] int[] correctAnswer = { 0, 0, 0, 0 };
+    [SerializeField] int[] userAnswer = { 0, 0, 0, 0 };
     [SerializeField] GameObject[] dial;
     [SerializeField] GameObject hasp;
 
     public void IsCorrectAnswer()
     {
-        float angle;
         int correct = 0;
+
         for (int i = 0; i < 4; i++)
         {
-            angle = dial[i].transform.eulerAngles.y;
+            while (userAnswer[i] < 0)
+            {
+                userAnswer[i] += 10;
+            }
 
-            if (Math.Round(angle) == answer[i] * 36f)
+            if (userAnswer[i] == correctAnswer[i])
             {
                 correct++;
             }
@@ -27,11 +31,37 @@ public class LockController : MonoBehaviour
         {
             OpenLock();
         }
-
     }
 
     public void OpenLock()
     {
-        hasp.transform.Translate(0, 2f, 0);
+        hasp.transform.position = new Vector3(0f, 8f, 0f);
+    }
+
+
+
+
+    // direction = 상하좌우 방향, procedure = 다이얼 번호(0부터 시작)
+    public void rotateDial(char direction, int procedure)
+    {
+        switch(direction)
+        {
+            case 'U':
+                dial[procedure].transform.Rotate(0, 36f, 0);
+                userAnswer[procedure]--;
+                break;
+            case 'D':
+                dial[procedure].transform.Rotate(0, -36f, 0);
+                userAnswer[procedure]++;
+                break;
+            case 'L':
+                dial[procedure].transform.Rotate(-36f, 0, 0);
+                userAnswer[procedure]--;
+                break;
+            case 'R':
+                dial[procedure].transform.Rotate(36f, 0, 0);
+                userAnswer[procedure]++;
+                break;
+        } 
     }
 }

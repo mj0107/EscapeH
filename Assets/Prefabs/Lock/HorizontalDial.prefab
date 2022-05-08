@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 8823427555216116165}
   - component: {fileID: 8823427555216116166}
   m_Layer: 0
-  m_Name: Dial
+  m_Name: HorizontalDial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
