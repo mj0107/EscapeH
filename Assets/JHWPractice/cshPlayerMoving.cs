@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class cshPlayerMoving : MonoBehaviour
 {
-    //PlayerEmulator var
-    private Vector3 m_velocity;
-    public float m_moveSpeed = 2.0f;
-
 
     //OculusPractice var
     public int speedForward = 6;
@@ -21,31 +17,10 @@ public class cshPlayerMoving : MonoBehaviour
     }
     void Update()
     {
-        PlayerMove();
         //OculusPlayerMoving();
     }
 
-    
-    //PlayerMovingEmulator
-    private void PlayerMove()
-    {
-        CharacterController controller = GetComponent<CharacterController>();
-
-        m_velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        m_velocity = m_velocity.normalized;
-
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            m_velocity *= 2.0f;
-        }
-
-        controller.Move(m_velocity * m_moveSpeed * Time.deltaTime);
-       
-    }
-    
-
-    //Oculus PlayerMoveing Emulaotr
-
+    //Oculus Moving
     private void OculusPlayerMoving()
     {
         dirX = 0;
