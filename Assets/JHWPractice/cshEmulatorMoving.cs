@@ -11,12 +11,16 @@ public class cshEmulatorMoving : MonoBehaviour
     private Quaternion mCameraTargetRot;
     public Transform mPlayerCamera;
 
+    Animator anim;
+
     void Start()
     {
         mCharacterTargetRot = transform.localRotation;
         mCameraTargetRot = mPlayerCamera.transform.localRotation;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        anim = GetComponent<Animator>();
     }
 
  
@@ -35,10 +39,21 @@ public class cshEmulatorMoving : MonoBehaviour
         float hmv = Input.GetAxis("Horizontal");
 
         Vector2 mInput = new Vector2(hmv, vmv);
+
+        if(mInput.x >= 0.1 || mInput.y >= 0.1)
+        {
+            anim.SetFloat("Speed", 0.75f);
+        }
+        else
+        {
+            anim.SetFloat("Speed", 0.0f);
+        }
+
         Vector3 desireMove = transform.forward * 1 * mInput.y +
             transform.right * 1 * mInput.x;
         transform.position += desireMove * mSpeed * Time.deltaTime;
        
+
 
 
     }
