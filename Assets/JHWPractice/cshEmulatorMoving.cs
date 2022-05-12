@@ -35,6 +35,8 @@ public class cshEmulatorMoving : MonoBehaviour
         mCameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
         mPlayerCamera.transform.localRotation = mCameraTargetRot;
 
+        transform.localRotation = mPlayerCamera.localRotation;
+
         float vmv = Input.GetAxis("Vertical");
         float hmv = Input.GetAxis("Horizontal");
 
