@@ -21,10 +21,12 @@ public class LockButton : MonoBehaviour
     [SerializeField] int procedure; // {0, 1, 2, 3} -> n번째 다이얼
 
 
+
+    /*
     private void Update()
     {
         // Camera.main을 Player로 조절해줘야할듯? 테스트 필요
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Input.GetMouseButtonDown(0))
@@ -35,4 +37,12 @@ public class LockButton : MonoBehaviour
             }
         }
     }
+    */
+
+    public void OnClick()
+    {
+        unityEvent.Invoke(direction, procedure);
+    }
 }
+
+
