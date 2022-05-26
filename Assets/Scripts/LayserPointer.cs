@@ -49,10 +49,21 @@ public class LayserPointer : MonoBehaviour
 
             if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
             {
+                // GameObject 형태의 Button일 경우
                 if (hitObj.collider.gameObject.CompareTag("LockButton"))
                 {
                     hitObj.collider.gameObject.GetComponent<LockButton>().OnClick();
                 }
+
+                if (hitObj.collider.gameObject.CompareTag("UIButton"))
+                {
+                    hitObj.collider.gameObject.GetComponent<UIButton>().OnClick();
+                }
+
+                //if (hitObj.transform.gameObject.layer == LayerMask.NameToLayer("UI"))
+                //{
+                //    hitObj.transform.gameObject.GetComponent<Button>().onClick.Invoke();
+                //}
             }
 
         }

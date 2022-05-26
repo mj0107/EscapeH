@@ -79,10 +79,10 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void CreateRoom() // 방 만들기
     {
-        if (string.IsNullOrEmpty(roomNameInputField.text)) // 빈값이면 만들어지지 않음
-        {
-            return;
-        }
+        //if (string.IsNullOrEmpty(roomNameInputField.text)) // 빈값이면 만들어지지 않음
+        //{
+        //    return;
+        //}
 
         PhotonNetwork.CreateRoom(roomNameInputField.text); // 포톤 네트워크 기능 : 방 만들기
         MenuManager.Instance.OpenMenu("loading"); // 로딩창 열기
