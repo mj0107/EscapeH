@@ -1644,7 +1644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108009634}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 70, y: 5, z: -48}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433451321}
@@ -10385,6 +10385,7 @@ GameObject:
   - component: {fileID: 443380687}
   - component: {fileID: 443380686}
   - component: {fileID: 443380685}
+  - component: {fileID: 443380690}
   m_Layer: 0
   m_Name: Chess Socket1
   m_TagString: Untagged
@@ -10415,10 +10416,32 @@ MonoBehaviour:
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: addCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: minusCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -10517,6 +10540,19 @@ Transform:
   m_Father: {fileID: 148290098}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &443380690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443380684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bb0cb4fb4cec04d924f7cb83faccf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeNum: 0
 --- !u!1001 &444790739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12708,36 +12744,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc6404896615e5b4ba0c755abff9238d, type: 3}
---- !u!1 &605805403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 81712986}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 605805404}
-  m_Layer: 0
-  m_Name: Chess Set (1) (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &605805404
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 81712986}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605805403}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1232006095}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &610847509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13329,6 +13335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 694219930}
+  - component: {fileID: 694219931}
   m_Layer: 0
   m_Name: ChessGimic
   m_TagString: Untagged
@@ -13353,6 +13360,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &694219931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694219929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6294843983c44cbd2178bd2e4cd2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chess:
+  - {fileID: 1019411150636700551}
+  - {fileID: 4904132360578384909}
+  - {fileID: 4376781907737243905}
+  userAnswer:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  count: 0
 --- !u!1001 &696272659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15338,6 +15366,7 @@ GameObject:
   - component: {fileID: 868593675}
   - component: {fileID: 868593674}
   - component: {fileID: 868593673}
+  - component: {fileID: 868593677}
   m_Layer: 0
   m_Name: Chess Socket3
   m_TagString: Untagged
@@ -15382,10 +15411,32 @@ MonoBehaviour:
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: addCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: minusCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -15470,6 +15521,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868593671}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &868593677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868593671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bb0cb4fb4cec04d924f7cb83faccf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeNum: 2
 --- !u!4 &871218148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3ec47a550d573d445a09f47533275ef2,
@@ -18021,6 +18085,7 @@ GameObject:
   - component: {fileID: 1030024176}
   - component: {fileID: 1030024175}
   - component: {fileID: 1030024174}
+  - component: {fileID: 1030024178}
   m_Layer: 0
   m_Name: Chess Socket2
   m_TagString: Untagged
@@ -18065,10 +18130,32 @@ MonoBehaviour:
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: addCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694219931}
+        m_MethodName: minusCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -18153,6 +18240,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030024172}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1030024178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030024172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bb0cb4fb4cec04d924f7cb83faccf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeNum: 1
 --- !u!1001 &1030187526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24000,6 +24100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctAnswer: 01010000010001
   userAnswer: 00000000000000
+  isAnswer: 0
   display:
   - {fileID: 81382793}
   - {fileID: 1863013278}
