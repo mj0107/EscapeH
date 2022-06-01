@@ -6,6 +6,7 @@ public class NormalButtonController : MonoBehaviour
 {
     [SerializeField] bool[] correctAnswer = { true, true, false, false, true, false, true };
     [SerializeField] bool[] userAnswer = { false, false, false, false, false, false, false };
+    public bool isAnswer = false;
 
     [SerializeField] GameObject[] display;
 
@@ -35,6 +36,7 @@ public class NormalButtonController : MonoBehaviour
 
     public void OpenLock()
     {
+        isAnswer = true;
         Debug.Log("Blazier Open");
     }
 
