@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LockButton
   - UIButton
+  - Chess
   layers:
   - Default
   - TransparentFX
