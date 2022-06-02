@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class cshARoomFloorCollsion : MonoBehaviour
 {
-    [SerializeField] GameObject[] m_ARoomAnswerChessesPosition;
+    public GameObject[] m_ARoomAnswerChessesPosition;
+    
     void Start()
     {
         m_ARoomAnswerChessesPosition = new GameObject[4];
