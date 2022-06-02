@@ -64,6 +64,14 @@ public class PlayerController : MonoBehaviour
         else if (PhotonNetwork.NickName == players[1].NickName)
         {
             GameObject.Find("Floor A").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
+
+            Camera cam = null;
+            if (PV.IsMine)
+            {
+                cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+            }
+
+            GameObject.Find("BookCanvas").GetComponent<Canvas>().worldCamera = cam;
         }
 
         //GameObject.Find("Floor B").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
