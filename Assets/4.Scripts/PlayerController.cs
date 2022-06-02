@@ -1,4 +1,5 @@
 ﻿using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UMA;
@@ -38,6 +39,22 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
             //Destroy(rb);
+        }
+
+        Teleport();
+    }
+
+    void Teleport() 
+    {
+        Player[] players = PhotonNetwork.PlayerList;
+
+        if (PhotonNetwork.NickName == players[0].NickName)
+        {
+            GameObject.Find("Floor B").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
+        }
+        else
+        {
+            GameObject.Find("Floor A").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
         }
     }
 

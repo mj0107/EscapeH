@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6210112792189695974}
   - component: {fileID: 6210112792189695973}
   - component: {fileID: 6210112792189695972}
-  - component: {fileID: 6210112792189695971}
   - component: {fileID: 6210112792189695970}
   - component: {fileID: 1119666170}
   - component: {fileID: 1119666171}
   - component: {fileID: 1119666172}
+  - component: {fileID: 5122083813366839760}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -87,20 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XROrigin: {fileID: 0}
---- !u!114 &6210112792189695971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6210112792189695969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
+  m_XROrigin: {fileID: 6210112792189695974}
 --- !u!114 &6210112792189695970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
-  m_SynchronizeScale: 1
+  m_SynchronizeScale: 0
   m_UseLocal: 1
 --- !u!114 &1119666171
 MonoBehaviour:
@@ -173,6 +160,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd18f6062aeaa641832112db5fa3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5122083813366839760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210112792189695969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 6210112792189695972}
 --- !u!1 &6210112792608270701
 GameObject:
   m_ObjectHideFlags: 0
