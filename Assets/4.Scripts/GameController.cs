@@ -17,8 +17,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (roomAGimic[0] == true && roomAGimic[1] == true && roomAGimic[2] == true
-            && roomBGimic[0] == true && roomBGimic[1] == true && roomBGimic[2] == true)
+        if ((roomAGimic[0] == true && roomAGimic[1] == true && roomAGimic[2] == true)
+            || (roomBGimic[0] == true && roomBGimic[1] == true && roomBGimic[2] == true))
         {
             GameEnd();
         }
@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
 
     private void GameEnd()
     {
-        Debug.Log("End Game");
+        GameObject.Find("UICanvas").transform.Find("txtEnd").transform.gameObject.SetActive(true);
     }
 
 

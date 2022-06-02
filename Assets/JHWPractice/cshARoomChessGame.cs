@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class cshARoomChessGame : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class cshARoomChessGame : MonoBehaviour
         {
             Debug.Log("Clear ARoom Chess Gimic");
             GameController.Instance.roomAGimic[2] = true;
+            GameObject.Find("Image3").GetComponent<Image>().color = new Color(1f, 0, 0, 0.5f);
             /*
              * A Room Player가 Chess Gimic을 수행했다는 정보를 
              * GameManager에게 알려야 함.

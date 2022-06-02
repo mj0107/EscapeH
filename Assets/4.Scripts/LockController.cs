@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LockController : MonoBehaviour
 {
@@ -42,10 +43,12 @@ public class LockController : MonoBehaviour
         if (room == 'A')
         {
             GameController.Instance.roomAGimic[0] = true;
+            GameObject.Find("Image1").GetComponent<Image>().color = new Color(1f, 0, 0, 0.5f);
         }
         else if (room == 'B')
         {
             GameController.Instance.roomBGimic[0] = true;
+            GameObject.Find("Image1").GetComponent<Image>().color = new Color(1f, 0, 0, 0.5f);
         }
     }
 

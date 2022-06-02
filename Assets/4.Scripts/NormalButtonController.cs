@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NormalButtonController : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class NormalButtonController : MonoBehaviour
     {
         isAnswer = true;
         GameController.Instance.roomAGimic[1] = true;
+        GameObject.Find("Image2").GetComponent<Image>().color = new Color(1f, 0, 0, 0.5f);
     }
 
 

@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
         {
             GameObject.Find("Main Camera").AddComponent<Camera>();
             gameObject.GetComponent<XROrigin>().Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+            GameObject.Find("UICanvas").GetComponent<Canvas>().worldCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+            GameObject.Find("UICanvas").GetComponent<Canvas>().planeDistance = 10f;
 
             Teleport();
         }

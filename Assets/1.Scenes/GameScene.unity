@@ -3261,7 +3261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc4e058292abfe344b053d96ada542b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.64
+      value: 43.21
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc4e058292abfe344b053d96ada542b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3269,7 +3269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc4e058292abfe344b053d96ada542b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.26
+      value: -34.18
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc4e058292abfe344b053d96ada542b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17058,7 +17058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868593671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7328854, y: 25.94314, z: -8.527157}
+  m_LocalPosition: {x: -3.152, y: 25.88, z: -8.527157}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 148290098}
@@ -40245,8 +40245,8 @@ GameObject:
   - component: {fileID: 3648843205462833631}
   - component: {fileID: 2309030806283457706}
   - component: {fileID: 276487059}
-  - component: {fileID: 276487058}
   - component: {fileID: 4376781907737243906}
+  - component: {fileID: 276487058}
   m_Layer: 0
   m_Name: King
   m_TagString: Chess

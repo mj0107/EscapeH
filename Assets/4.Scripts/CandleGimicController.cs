@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CandleGimicController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class CandleGimicController : MonoBehaviour
     public void OpenLock()
     {
         GameController.Instance.roomBGimic[1] = true;
+        GameObject.Find("Image2").GetComponent<Image>().color = new Color(1f, 0, 0, 0.5f);
     }
 
 
