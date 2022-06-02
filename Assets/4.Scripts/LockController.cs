@@ -24,7 +24,7 @@ public class LockController : MonoBehaviour
                 userAnswer[i] += 10;
             }
 
-            if (userAnswer[i] == correctAnswer[i])
+            if (userAnswer[i] % 10 == correctAnswer[i])
             {
                 correct++;
             }

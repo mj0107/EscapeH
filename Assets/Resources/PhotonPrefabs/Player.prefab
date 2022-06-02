@@ -624,7 +624,7 @@ MonoBehaviour:
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
-  m_TranslateSpeed: 1
+  m_TranslateSpeed: 5
   m_AnchorRotateReferenceFrame: {fileID: 0}
 --- !u!120 &6210112792608270688
 LineRenderer:
@@ -744,9 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.02
+  m_LineWidth: 0.01
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 5
+  m_LineLength: 7
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
-  m_TranslateSpeed: 1
+  m_TranslateSpeed: 5
   m_AnchorRotateReferenceFrame: {fileID: 0}
 --- !u!120 &6210112793775716203
 LineRenderer:
@@ -1247,9 +1247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.02
+  m_LineWidth: 0.01
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 5
+  m_LineLength: 7
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
