@@ -24,7 +24,7 @@ public class ChessGame : MonoBehaviour
         if (count == 3)
         {
             isCorrectAnswer();
-            count++;
+            
         }
     }
 
