@@ -9,4 +9,10 @@ public class SceneChange : MonoBehaviour
     {
         PhotonNetwork.LoadLevel(2);
     }
+
+
+    public void NextScene()
+    {
+        PhotonNetwork.LoadLevel(2);
+    }
 }
