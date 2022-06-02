@@ -37,25 +37,37 @@ public class PlayerController : MonoBehaviour
     {
         if (!PV.IsMine) // 내꺼가 아닌 카메라, 리지드바디 제거
         {
-            Destroy(GetComponentInChildren<Camera>().gameObject);
+            //Destroy(GetComponentInChildren<Camera>().gameObject);
             //Destroy(rb);
         }
 
-        Teleport();
+        if (PV.IsMine)
+        {
+            GameObject.Find("Main Camera").AddComponent<Camera>();
+            gameObject.GetComponent<XROrigin>().Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+            Teleport();
+        }
+
+
     }
 
     void Teleport() 
     {
+
         Player[] players = PhotonNetwork.PlayerList;
 
         if (PhotonNetwork.NickName == players[0].NickName)
         {
             GameObject.Find("Floor B").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
         }
-        else
+        else if (PhotonNetwork.NickName == players[1].NickName)
         {
             GameObject.Find("Floor A").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
         }
+
+        //GameObject.Find("Floor B").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
+        //GameObject.Find("Floor A").GetComponent<TeleportationArea>().teleportationProvider = gameObject.GetComponent<TeleportationProvider>();
     }
 
     /*
