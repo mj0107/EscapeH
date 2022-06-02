@@ -32,6 +32,7 @@ public class NormalButtonController : MonoBehaviour
 
     public void OpenLock()
     {
+        isAnswer = true;
         GameController.Instance.roomAGimic[1] = true;
     }
 
