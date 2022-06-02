@@ -34,6 +34,9 @@ public class CandleLightOff : MonoBehaviour
                 fires[i].Stop();
             }
             isPlayed = true;
+
+            gameObject.GetComponent<AudioSource>().Stop();
+
         }
     }
 }

@@ -31,6 +31,7 @@ public class LockController : MonoBehaviour
 
         if (correct == 4)
         {
+            gameObject.GetComponent<AudioSource>().Play();
             OpenLock();
         }
     }
