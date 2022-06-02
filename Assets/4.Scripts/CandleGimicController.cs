@@ -29,7 +29,7 @@ public class CandleGimicController : MonoBehaviour
     // 종료행동함수
     public void OpenLock()
     {
-        Debug.Log("Candle Gimic clear!");
+        GameController.Instance.roomBGimic[1] = true;
     }
 
 

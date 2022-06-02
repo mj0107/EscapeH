@@ -10,6 +10,8 @@ public class LockController : MonoBehaviour
     [SerializeField] GameObject[] dial;
     [SerializeField] GameObject hasp;
 
+    [SerializeField] char room;
+
     public void IsCorrectAnswer()
     {
         int correct = 0;
@@ -35,7 +37,15 @@ public class LockController : MonoBehaviour
 
     public void OpenLock()
     {
-        hasp.transform.position = new Vector3(0f, 8f, 0f);
+        //hasp.transform.position = new Vector3(0f, 8f, 0f);
+        if (room == 'A')
+        {
+            GameController.Instance.roomAGimic[0] = true;
+        }
+        else if (room == 'B')
+        {
+            GameController.Instance.roomBGimic[0] = true;
+        }
     }
 
 

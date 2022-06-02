@@ -34,6 +34,7 @@ public class cshARoomChessGame : MonoBehaviour
             ARoomChess[3] == ARoomChessAnswer[3] )
         {
             Debug.Log("Clear ARoom Chess Gimic");
+            GameController.Instance.roomAGimic[2] = true;
             /*
              * A Room Player가 Chess Gimic을 수행했다는 정보를 
              * GameManager에게 알려야 함.

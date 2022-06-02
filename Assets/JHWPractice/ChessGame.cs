@@ -32,7 +32,8 @@ public class ChessGame : MonoBehaviour
     {
         if (chess[0] == userAnswer[0] && chess[1] == userAnswer[1] && chess[2] == userAnswer[2])
         {
-            Debug.Log("Correct!! godd!");
+            //Debug.Log("Correct!! godd!");
+            GameController.Instance.roomBGimic[2] = true;
         }
 
     }

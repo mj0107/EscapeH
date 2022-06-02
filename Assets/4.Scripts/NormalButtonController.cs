@@ -28,16 +28,11 @@ public class NormalButtonController : MonoBehaviour
         {
             OpenLock();
         }
-        else
-        {
-            Debug.Log("No Answer.." + correct);
-        }
     }
 
     public void OpenLock()
     {
-        isAnswer = true;
-        Debug.Log("Blazier Open");
+        GameController.Instance.roomAGimic[1] = true;
     }
 
 
