@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerGroundCheck : MonoBehaviour
 {
+    /*
     PlayerController playerController;
 
 
@@ -69,4 +70,5 @@ public class PlayerGroundCheck : MonoBehaviour
         }
         playerController.SetGroundedState(true);
     }
+    */
 }

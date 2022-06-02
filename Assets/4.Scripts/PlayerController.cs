@@ -6,30 +6,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float mouseSensitivity; // 마우스 감도
-    [SerializeField] float sprintSpeed; // 뛰는 속도
-    [SerializeField] float walkSpeed; // 걷는 속도
-    [SerializeField] float jumpForce; // 점프 힘
-    [SerializeField] float smoothTime; // 뛰기->걷기 바뀌는 가속시간
+    //[SerializeField] float mouseSensitivity; // 마우스 감도
+    //[SerializeField] float sprintSpeed; // 뛰는 속도
+    //[SerializeField] float walkSpeed; // 걷는 속도
+    //[SerializeField] float jumpForce; // 점프 힘
+    //[SerializeField] float smoothTime; // 뛰기->걷기 바뀌는 가속시간
 
-    [SerializeField] GameObject cameraHolder; // 카메라
-    float verticalLookRotation; // 위아래 각도 조절할 변수
+    //[SerializeField] GameObject cameraHolder; // 카메라
+    //float verticalLookRotation; // 위아래 각도 조절할 변수
 
-    bool grounded; // 점프 가능한 상태인지 체크
-    Vector3 smoothMoveVelocity;
-    Vector3 moveAmount; // 실제 이동거리
+    //bool grounded; // 점프 가능한 상태인지 체크
+    //Vector3 smoothMoveVelocity;
+    //Vector3 moveAmount; // 실제 이동거리
 
 
-    Rigidbody rb;
+    //Rigidbody rb;
     PhotonView PV; // 자기 컨트롤러만 움직이기 위해 사용
 
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         PV = GetComponent<PhotonView>();
-
-        
     }
 
     private void Start()
@@ -37,11 +35,11 @@ public class PlayerController : MonoBehaviour
         if (!PV.IsMine) // 내꺼가 아닌 카메라, 리지드바디 제거
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
-            Destroy(rb);
+            //Destroy(rb);
         }
     }
 
-
+    /*
     private void Update()
     {
         if (PV.IsMine) // 내꺼일때만 작동
@@ -99,4 +97,5 @@ public class PlayerController : MonoBehaviour
     {
         grounded = _grounded;
     }
+    */
 }
